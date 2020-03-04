@@ -1,0 +1,58 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+@import "base/base";
+@import "base/typography";
+@import "base/animations";
+@import "base/utilities";
+@import "base/typography";
+@import "pages/home";
+@import "components/buttons";
+@import "layout/header";
+@import "layout/grid";
+@import "pages/home";
+@import "components/component";
+@import "components/feature-box";
+@import "components/card";
+@import "components/story";
+@import "components/bg-video";
+@import "components/form";
+@import "layout/footer";
+@import "layout/navigation";
+@import "components/popup";
+//On peut importer un fichier sass sans specifier l'underscore et l'etension du fichier
+
+
+//COLORS:
+//
+//Light green: #7ed56f
+//Medium green: #55c57a
+//Dark green: #28b485
+
+
+.box-logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+
+}
+
+.logo {
+  height: 35px;
+
+}
+
+.text-box {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  display: inline-block;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+
+
+

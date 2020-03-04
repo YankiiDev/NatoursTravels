@@ -1,0 +1,75 @@
+@import "../abstracts/variables";
+
+html {
+  font-size: 62.5%;
+  padding: 20px;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.7;
+}
+
+
+.heading--primary {
+  color: $color-white;
+  text-transform: uppercase;
+
+  backface-visibility: hidden;
+
+  &_main {
+    display: block;
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: 18px;
+
+    animation: moveInLeft;
+    animation-duration: 2s;
+
+  }
+
+  &_sub {
+    display: block;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 9px;
+
+    animation: moveInRight;
+    animation-duration: 2s;
+
+  }
+}
+
+.heading-secondary {
+  display: inline-block;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  background-image: linear-gradient(to right, $color-primary, $color-primary-light);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all .2s;
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.3);
+    text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+  }
+}
+
+.heading-tertiary {
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+
+  &:not(last-child) {
+    margin-bottom: 3rem;
+  }
+}
